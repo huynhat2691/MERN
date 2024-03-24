@@ -1,0 +1,29 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "huy",
+  "password": "huy"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "huy",
+  "password": "huy"
+}
+
+###
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWZjOThkOTFjYjFlNzMxZGFiMzQ3NDAiLCJpYXQiOjE3MTExMzk2MzB9.IvdXiatl7ay5gpAGFhfGBRzbhgHkhDjp1hI9OTPpoGM
+
+{
+  "title":"first post",
+  "description":"abc",
+  "url":"google.com",
+  "status":"LEARNING"
+}

@@ -9,7 +9,7 @@ import Col from "react-bootstrap/Col";
 import SinglePost from "../components/posts/SinglePost";
 import AddPostModal from "../components/posts/AddPostModal";
 import UpdatePostModal from "../components/posts/UpdatePostModal";
-import addIcon from "../assets/plus-circle-fill.svg";
+import addIcon from "../assets/plus-icon.svg";
 import Toast from "react-bootstrap/Toast";
 
 const Dashboard = () => {
@@ -69,11 +69,7 @@ const Dashboard = () => {
 
         <OverlayTrigger
           placement="left"
-          overlay={
-            <Tooltip style={{ color: "white" }}>
-              Add a new thing to learn
-            </Tooltip>
-          }
+          overlay={<Tooltip>Add a new thing to learn</Tooltip>}
         >
           <Button
             className="btn-floating"
@@ -95,7 +91,7 @@ const Dashboard = () => {
       {/* After post is added, show toast */}
       <Toast
         show={show}
-        style={{ position: "fixed", top: "20%", right: "10px" }}
+        style={{ position: "fixed", top: "10%", right: "10px" }}
         className={`bg-${type} text-white`}
         onClose={() => setShowToast({ show: false, message: "", type: null })}
         delay={3000}

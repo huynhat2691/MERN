@@ -54,7 +54,7 @@ body {
 .post-button {
   background: transparent;
   border: none;
-  border-right: 2px solid #2D9596;
+  border-right: 2px solid #2d9596;
   border-radius: 0;
 }
 
@@ -64,22 +64,23 @@ body {
 
 .post-button:hover {
   background: transparent;
+  border-right: 2px solid #2d9596;
 }
 
 a.post-button.btn:focus,
 a.post-button.btn:active {
   outline: none;
   background: transparent;
-  border: none;
   box-shadow: none;
+  border-right: 2px solid #2d9596;
 }
 
 button.post-button.btn:focus,
 button.post-button.btn:active {
   outline: none;
   background: transparent;
-  border: none;
   box-shadow: none;
+  border-right: 2px solid #2d9596;
 }
 
 /* Floating add button */
@@ -104,16 +105,24 @@ button.post-button.btn:active {
 }
 
 /* Add new post tooltip */
-.tooltip {
-  background: transparent;
-}
-
-.tooltip .arrow::before {
-  border-left-color: #78c2ad;
-}
 
 .tooltip-inner {
-  background: #78c2ad;
+  color: #fff;
+  font-weight: bolder;
+  background: #2d9596;
+}
+/* 
+.tooltip .arrow::before {
+  display: none;
+}
+
+.tooltip .arrow::before,
+.tooltip .arrow::after {
+  display: none;
+} */
+
+.tooltip-arrow {
+  display: none !important;
 }
 
 /* Post border thicker */
@@ -127,3 +136,5 @@ button.post-button.btn:active {
 .post-title {
   margin-bottom: 0.5rem;
 }
+
+

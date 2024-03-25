@@ -43,20 +43,10 @@ const NavbarMenu = () => {
 
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
-          <Nav.Link
-            className="fw-bold text-white"
-            to="/dashboard"
-            as={Link}
-            style={{ paddingRight: "20px" }}
-          >
+          <Nav.Link className="fw-bold text-white" to="/dashboard" as={Link}>
             Dashboard
           </Nav.Link>
-          <Nav.Link
-            className="fw-bold text-white"
-            to="/about"
-            as={Link}
-            style={{ borderLeft: "2px solid #B6BBC4", paddingLeft: "20px" }}
-          >
+          <Nav.Link className="fw-bold text-white" to="/about" as={Link}>
             About
           </Nav.Link>
         </Nav>

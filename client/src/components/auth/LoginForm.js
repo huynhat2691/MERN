@@ -46,7 +46,7 @@ const LoginForm = () => {
 
   return (
     <>
-      <Form className="my-4" onSubmit={login}>
+      <Form className="my-4 responsive-form" onSubmit={login}>
         <AlertMessage info={alert} />
         <Form.Group className="mb-3">
           <Form.Control
@@ -68,7 +68,7 @@ const LoginForm = () => {
             onChange={onChangeLoginForm}
           />
         </Form.Group>
-        <Button variant="success" type="submit">
+        <Button variant="success" type="submit" className="w-100">
           Login
         </Button>
       </Form>
@@ -76,7 +76,7 @@ const LoginForm = () => {
         Don't have an account?
         <Link to="/register">
           <Button variant="info" size="sm" className="ms-2">
-            Register
+            Sign Up
           </Button>
         </Link>
       </p>

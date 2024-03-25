@@ -32,7 +32,7 @@ body {
 }
 
 .landing-inner form {
-  width: 30%;
+  width: 25%;
 }
 
 .landing-inner h1,
@@ -135,6 +135,30 @@ button.post-button.btn:active {
 /* Post title */
 .post-title {
   margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 400px) {
+  .responsive-form {
+    min-width: 200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .responsive-form {
+    min-width: 300px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .responsive-form {
+    min-width: 350px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+  .responsive-form {
+    min-width: 400px;
+  }
 }
 
 

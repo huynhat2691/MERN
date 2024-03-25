@@ -50,7 +50,7 @@ const RegisterForm = () => {
 
   return (
     <>
-      <Form className="my-4" onSubmit={register}>
+      <Form className="my-4 responsive-form" onSubmit={register}>
         <AlertMessage info={alert} />
         <Form.Group className="mb-3">
           <Form.Control
@@ -82,8 +82,8 @@ const RegisterForm = () => {
             onChange={onChangeRegisterForm}
           />
         </Form.Group>
-        <Button variant="success" type="submit">
-          Register
+        <Button variant="success" type="submit" className="w-100">
+          Sign Up
         </Button>
       </Form>
       <p>
